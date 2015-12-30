@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Minecraft.ttf">
+            <string>Minecraft</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -222,11 +227,15 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhB-AS-8xM">
-                                <rect key="frame" x="466" y="127" width="77" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4556" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhB-AS-8xM">
+                                <rect key="frame" x="210" y="115" width="200" height="46"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="6kY-vS-uyf"/>
+                                    <constraint firstAttribute="height" constant="40" id="cIT-X5-5aW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -235,11 +244,13 @@
                         <constraints>
                             <constraint firstItem="Exr-fR-k4y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AXl-LH-XCv"/>
                             <constraint firstAttribute="bottom" secondItem="Exr-fR-k4y" secondAttribute="bottom" id="ODg-So-Grz"/>
+                            <constraint firstItem="Kil-Ea-yqN" firstAttribute="trailing" secondItem="hhB-AS-8xM" secondAttribute="trailing" constant="27" id="RbH-BG-kSn"/>
                             <constraint firstItem="Kil-Ea-yqN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TOc-28-3Kd"/>
                             <constraint firstAttribute="trailing" secondItem="Exr-fR-k4y" secondAttribute="trailing" id="fc7-80-veF"/>
                             <constraint firstItem="wSV-yI-imT" firstAttribute="centerX" secondItem="Kil-Ea-yqN" secondAttribute="centerX" id="gEk-Yc-SVc"/>
                             <constraint firstItem="wSV-yI-imT" firstAttribute="centerY" secondItem="Kil-Ea-yqN" secondAttribute="centerY" constant="40" id="sx1-ls-RgT"/>
                             <constraint firstItem="Kil-Ea-yqN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uFf-4t-93U"/>
+                            <constraint firstItem="hhB-AS-8xM" firstAttribute="top" secondItem="Kil-Ea-yqN" secondAttribute="top" constant="22" id="wI7-vo-7EL"/>
                         </constraints>
                     </view>
                 </viewController>
