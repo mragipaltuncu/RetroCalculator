@@ -25,6 +25,10 @@
                                     <constraint firstAttribute="width" secondItem="IK6-07-elO" secondAttribute="height" multiplier="1:1" id="fGT-BR-dQz"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="Exr-fR-k4y">
+                                <rect key="frame" x="-5" y="554" width="605" height="51"/>
+                                <animations/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kil-Ea-yqN">
                                 <rect key="frame" x="152" y="95" width="298" height="477"/>
                                 <subviews>
@@ -222,7 +226,10 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Exr-fR-k4y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AXl-LH-XCv"/>
+                            <constraint firstAttribute="bottom" secondItem="Exr-fR-k4y" secondAttribute="bottom" id="ODg-So-Grz"/>
                             <constraint firstItem="Kil-Ea-yqN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TOc-28-3Kd"/>
+                            <constraint firstAttribute="trailing" secondItem="Exr-fR-k4y" secondAttribute="trailing" id="fc7-80-veF"/>
                             <constraint firstItem="wSV-yI-imT" firstAttribute="centerX" secondItem="Kil-Ea-yqN" secondAttribute="centerX" id="gEk-Yc-SVc"/>
                             <constraint firstItem="wSV-yI-imT" firstAttribute="centerY" secondItem="Kil-Ea-yqN" secondAttribute="centerY" constant="40" id="sx1-ls-RgT"/>
                             <constraint firstItem="Kil-Ea-yqN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uFf-4t-93U"/>
@@ -250,6 +257,7 @@
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
+        <image name="ground" width="888" height="72"/>
         <image name="multiply" width="111" height="114"/>
         <image name="space-bg" width="988" height="946"/>
         <image name="subtract" width="111" height="114"/>
